@@ -1,5 +1,8 @@
 :root{
+  --text-light:#fff;
+  --bg-primary:#fafbfc;
   --gradient:linear-gradient(135deg, #8844ee, #b07dfb);
+  --purple-primary:#b07df8;
 }
 
 .estrutura{
@@ -11,8 +14,6 @@
   "footer    footer    footer"
   ;
 }
-
-
 
 .col-wide{
   grid-column: 1 / -1;
