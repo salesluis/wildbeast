@@ -1,0 +1,90 @@
+.content{
+  grid-area: content;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.titulo{
+  color: #b07dfb;
+}
+.titulo h1{
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.caracteristicas{
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.caracteristicas > div{
+  width: 80px;
+  text-align: center;
+  background: var(--gradient);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  position: relative;
+}
+.numero{
+  color: var(--purple-primary);
+  font-size: 3rem;
+  line-height: 1;
+  margin: 10px auto;
+}
+.rotulo{
+  display: block;
+  background: var(--text-light);
+  border-radius:0 0 5px 5px ;
+  color: var(--purple-primary);
+  padding: 5px 0;
+  position: relative;
+  top: 2px;
+}
+
+.destaque{
+  font-size: 0.875rem;
+  color: var(--purple-primary);
+  max-width: 16em;
+}
+
+.citacao,
+.atributos{
+  align-self: start;
+  padding: 30px;
+  border-radius:5px ;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, .15);
+  background: var(--gradient);
+}
+.citacao p{
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--text-light);
+  max-width: 500px;
+  margin: 0 auto;
+}
+.atributos li{
+  color: var(--text-light);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.125rem;
+  padding: 14px;
+}
+.atributos li + li{
+  border-top: 2px solid var(--purple-primary);
+}
+
+.img-1{
+  grid-row: span 2;
+  align-self: end;
+}
+.img-2{
+  align-self: end;
+}
+.informacoes p + p{
+  margin-top: 30px;
+}
