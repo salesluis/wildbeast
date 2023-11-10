@@ -1,0 +1,32 @@
+.header{
+  grid-area: header;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.header > a > img{
+  max-width:200px ;
+}
+.header-menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.header li + li{
+  margin-left: 30px;
+}
+
+.header-menu li a{
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 1.125rem;
+  background: rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  transition: .2s;
+}
+.header-menu li a:hover{
+  background: rgba(0, 0, 0, .5);
+
+}
