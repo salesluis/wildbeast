@@ -6,7 +6,7 @@
 
 .sidenav li a{
   display: block;
-  min-width: 60px;
+  min-width: 100px;
   max-width: 200px;
   margin: 0 auto 30px auto;
   background-color: var(--text-light);
@@ -17,5 +17,40 @@
 }
 .sidenav li a:hover{
   background: var(--purple-primary);
+}
+@keyframes seta{
+  from{
+    right: 30px;
+  }
+  to{
+    right: 20px;
+  }
+}
+@media(max-width:760px){
+  .sidenav{
+    padding: 0 30px;
+    overflow-x: auto;
+    --webkit-overflow-scrolling: touch;
+    --ms-overflow-style: -ms-autohinding-scrollbar;
+    position: relative;
+  }
+  .sidenav::after{
+    content: '→';
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.4);
+    animation: seta .5s ease-in 0s infinite alternate;
+  }
+  .sidenav ul{
+    display: flex;
+  }
+  .sidenav li {
+    flex: 1 0 60px;
+  }
+  .sidenav li a{
+    margin: 30px 30px 30px 0;
+  }
+  
 }
 
